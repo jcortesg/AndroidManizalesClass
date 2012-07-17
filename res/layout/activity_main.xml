@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/Enviar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="29dp"
+        android:onClick="login"
+        android:text="Envio" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/iconoandroid" />
+
+    <EditText
+        android:id="@+id/Hola1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Enviar1"
+        android:layout_alignLeft="@+id/Hola1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Hola1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="Usuario"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lista1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Enviar1"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
